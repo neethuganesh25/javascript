@@ -1,0 +1,201 @@
+                  
+                  
+                javascript frontend
+------------------------------------------------------
+browser - application programme which provides an interface to interact all infmns available in the world wide web
+
+browser understanding languages- html,css,javascript using browser engine
+
+javascript - behaviour - html,css,
+javascript access DOM
+
+DOM - document object model
+------------------------------
+*) created by browser
+*) its a tree structure of the html document
+
+BOM - browser object model
+------------------------------
+
+
+
+###  how to use js file in html document?
+---------------------------------------
+1)internal -   <script> </script> the script tag canbe placed in head or after thebody tag.most preferably
+               used after body tag(reduces the loading time)
+2)external - creates an external file with extension as .js,
+ <script> tag is used ,the path should be menioned in the src attribute of the script tag.
+ <script src='path'/>
+
+
+ how to access html tags
+ -----------------------------------------
+ 1)document.getElementByTagname('tagname') - return html collection(array)
+ 2)document.getElementById('idname') - returns directly the tag itself
+ 3)document.getElementByClassName('classname') - returns html collection of array
+ 4)document.querySelector(tag/#idname/.classname) - it returns first satisfying tag
+ 5)document.querySelectorAll() -it returns nodelist named array 
+
+
+ how to change the content in a tag
+ ---------------------------------------
+ - innerHTML
+eg:tag.innerHTML=''
+
+    EVENTS - events are actions that can lead to an update in DOM
+ ----------------------------------------------------------
+ 1)click
+ 2)change
+ 3)submit
+ 4)load
+ 5)key down
+ 
+** date()-
+
+
+ class in javascript library - it access the time of our system
+
+
+                Database
+----------------------------------------
+
+used to store Data
+1)stores data as key value pair , both key and value should be string.
+2)Large amount of data can be stored
+
+browser storage  -to store data , limited amount of data can be stored.
+-------------------
+
+1)local storage - stored data permanently.
+
+operations in local storage
+-----------------------------------
+     1)localstorage.setItem("key",value)- to add data to local storage
+     2)localstorage.getItem("key") - to retrieve the data from local storage
+     3)localstorageremoveItem("key")- to delete a data from local storage
+
+
+2)session storage - not a permanent storage 
+                  - removes when the session expires.
+
+
+JSON.stringify- convert object to string
+JSON.parse - convert a string to object 
+
+
+API - application programming interface
+-----------------------------------------------------
+- API are used to communicate between two applications availabe in internet 
+
+Types of API's  -divided  based on scope
+----------------------------------------
+1)public API  - globally available.
+2)private API - 
+3)partner API - 
+4)composite API - group of public,private, and composite
+
+HTTP - hypertext transfer protocol
+---------------------------------------
+https , ftp, smtp ,ptp,update
+
+http methods
+--------------
+1) GET() -  to retrieve data
+2)POST() -  to add data to database
+3)put () -  to  update the data
+4)delete()- to remove data
+
+request have two parts :-
+  1)header - contains content type and authentication keys
+  2)body - contains the data to be shared.
+
+JSON format - javascript object notation
+- common format for data sharing.   {key value pairs where both key and value should be string}
+syntax
+-----------
+{
+    'key':'value' 
+}
+
+rules:
+- data should be  shared as key value pairs were key and value should be string
+- each key value should be seperated by commas and enclosed in curly bracket.
+
+
+response series(status)
+---------------
+1)1xx series - informations.
+
+2)2xx series - success.
+3)3xx series - redirection.
+4)4xx series - client side error.
+5)5xx series - server side error.
+
+
+URL
+---------------------------------
+it is the resource address in internet
+
+RESTFUL API :- representational state transfer
+-----------------
+it is a sw architecture style that was created  to guide the design  and development of web
+
+
+refer-
+--------------
+SOAP architecture - 
+RTC architecture
+
+API Testing tool:-
+-------------------
+1)Thunder client - extension of vscode
+2)Postman - realtool for testing API.
+
+
+How to create API
+-------------------------
+1)AJAX - asynchronous javascript XML  
+   - XMLHTTPREQUEST class is used for AJAX API calls
+   - open() method establishes the API connection
+   - send() method is used to send the request.
+   readystate variable:-  obj.readystate  
+  property inside te class which value will change  from 1 to 4
+  this change can be seen using onreadystatechange function
+  response will only be obtained when the value of ready state reaches 4
+  responseText is the property in the class where we get the data
+
+
+  
+2)FETCH
+ - promise class
+ 
+ - to resolve asynchronous function
+
+ - three state 
+     1)resolve - .then()
+     2)reject  - catch()
+     3)pending - not resolved and not rejected
+
+3)ASYNC AWAIT-
+  - it makes promise easier to write
+  - .then() is used only on readystatechange
+  - can store data into a variable.
+  - async makes the function return promise
+  - await - makes the function pause the execution and wait for a resolved promise before it
+   continues
+  - await should always written inside the await function
+   - there by it avoid call backhell
+
+
+
+
+
+
+ajax - xmlhttp request class 
+ 1) create object for the xml httprequest class
+
+
+ 
+ 
+
+
