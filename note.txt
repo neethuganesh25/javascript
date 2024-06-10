@@ -1,0 +1,222 @@
+    19/03/2024
+ --------------
+ relational operator -- 
+ 1) == - left value is same as right value 
+ 2) === - value data type eg:10 == '-10'  - false 
+
+ 3) logical operator --   returns true or false ,used in between relational operators
+
+     1) AND -&& --
+
+
+     
+
+ T&&T=true
+ T&&F=false
+ F&&T=false
+ F && F=false
+
+
+    2)OR -|| --
+
+  T || T=true
+  T || F=true
+  F || T=true
+  F || F= false
+ 
+   3) NOT - !--
+ !T=false
+ !F=true
+
+increment and decrement operators
+----------------------------------
+ (++,--)
+
+ short hand operators
+ ---------------------------
+    x=x+y also as x+=y
+
+
+ternary operator
+--------------------
+condition? true stmnt: flase stmnt
+
+
+conditional statements or decision making statements
+-----------------------------------------------------
+1) if else 
+syntax--
+
+if(condition){
+    stmt
+}
+else{
+    stmt
+}
+
+20/03/2024
+
+looping statements - particular items repeated execution 
+1) while - syntax
+
+variable initialization
+while(condition)
+{
+    statements
+    exit condition
+}
+
+22/03/2024
+------------
+
+for loop--
+    syntax
+    for(initialization;condition;termination){
+        ------------
+        ------------
+    }
+
+
+11-04-2024
+---------------------------------------
+         array method
+---------------------------------------
+ 1) push - to add items to the end of a given array
+ 2) pop- to remove an item from the end of an array
+ 3)unshift - to add items to the start of an array
+ 4) shift- to remove an item from the start of an array6
+ 5) sort()- to arrange an array - des order or asc order
+ 6)flat(depth)- it changes the dimension of an array
+ 7)map()- for - return an arrayof same number element as that of its parent
+ 8) forEach()- same as that of for of loop - return void - so that further activities (array methods)cannot be executed
+ 9)reduce()- returns a single value eg: highest,lowest,sum,product,average etc.....
+10)filter()- it returns an array satisfying a specific condition 
+             array.filter(variable=>condition)
+ 11) some() -it returns true or false based on the condition applied to an  // boolean values
+ 12) find()-it return the first element that satisfy the condition
+ 13)includes()- to check an item present in the array or not // boolean values
+ 14)indexOf()- to find the index of a given item in an array
+ 
+ 15)splice()- to add and remove items at a particular position    
+     array.splice(index,how manyitems to be removes,items to be added // no negative values
+ 16) slice() - array method used to extract a section of an array and return a new array // accept negative values
+ 17) reduceRight() iteration starts from right and reduce into a single value 
+
+   17/04/
+     String
+ ------------------ 
+    methods
+ ----------------------
+ 1) startsWith()- check whether the given string starts with a particular character,
+     returns boolean values and is case sensitive
+2) endsWith()- check whetehr the given string ends with particular character,
+     returns boolean values and is case sensitive
+3) toUppercase() - to convert a given str into capital letter
+4)toLowerCase()- to convert str into small letter
+5)trim() - to remove blank spaces. remove spaces only from the ends ie from the starting and ending
+6) substring()- to create a substring from a given string
+    array.substring(startindex,endIndex)
+     - end index is excluded
+7) slice() - string.slice(starting index,ending index) - accept negative  values
+8) split() divide the given str into substring based on a particular value 
+   -- it returns an array
+9) replace()   - str.replace(searchvalue,replacevalue)    
+               - replace a particular word/character from a given string
+               - replace first matching word
+10)replaceAll()
+11)Array.from()- divide the string based on each character and returns an array.
+
+   
+   object
+-------------
+-object is also used to store more than one data with more clarity.
+- single varable that can hold more than one data of different data type has key value pairs that are seperated by commas and are enclosed with in curly brackets.
+- syntax -
+     objectname={
+        key:value ,
+        key:value,
+        ......
+        ......
+        key_n,value_n
+     }
+
+object oriented programming
+-------------------------------------
+it is a modern prgming paradigm (style) which consider realtime entity into object and class.
+
+basic
+------------
+1)class - blueprint which contains common features from which different objects can be created
+2)object - are the realtime entities that are created from the class
+3)reference - the memory location were the properties and methods(objects) are stored
+            - property is nothing but variables inside a class(used to store data)
+            - methods- functions inside a class
+syntax
+-------------
+class classname{
+//1)property
+//2)methods
+//3)constructor
+}
+constructor - one of the role is  used to initial values to property
+            - it is not mandatory that all the three,that is property and constructor should     
+              always present in the class.
+            - its a method
+            - constructor is automatically called when  classes created.
+
+-- instance variable(this.variablename)-inorder to access properties inside the class.
+
+
+objects
+-------------------
+syntax-
+
+const objectname=new classname()
+
+*) objects are used  inorder to access properties or methods outside the class 
+*) constructors are predefined methodsin a class which is invoked automatically
+
+
+pillars of oops
+------------------------------
+1)inheritance - mechanism used to access the methods (functions)and proerties(variables)from other class
+    ** parent class(super_class,base_class) and child class(derived_class,sub_class)
+     'extends' keyword is used for inheritance
+    ** classical inheritance - inheritance b/w classes(extendskeyword is used)
+
+object inheritance
+---------------------
+keyword: '__proto__'
+
+multilevel inheritance 
+----------------------
+
+2)polymorphism
+poly- many
+morphism- forms
+     1)method overloading 
+            -methods with same name but different arguments
+            -it executes based on the arguments
+            -javascript doesnot support method overloading
+            - to achieve method overloading,javascript uses restoperator(...)
+            the rest operator returns an arguments as array
+     2)method overriding- method with same name and same number of arguments,the last written method is executed here
+                        - javascript support this concept
+3)encapsulation - 
+4)abstraction - hide unrelevant data and shows relevant infm
+
+Exception Handling
+------------------
+Exception - runtime errors
+try catch blocks are used to handle exceptions
+at a time any one of the blocks works,either try or catch
+
+try{
+    stmt that causes an error
+}
+catch{
+    stmt to handle the error
+}
+finally{
+    stmt that have to be executed in both case
+}
